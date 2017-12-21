@@ -119,12 +119,12 @@
 // The following define selects which electronics board you have.
 // Please choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_GT2560_REV_A  // liutas4x4: Need to be revised, because name is not printed on board.
+  #define MOTHERBOARD BOARD_GT2560_REV_A  // If name is not printed on the board, it is REV_A too.
 #endif
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "Geeetech I3 Pro X" // CAUTION: On this particular machine custom IR probe is used. See @probes section for description.
+#define CUSTOM_MACHINE_NAME "GT I3 Pro X" // CAUTION: On this particular machine custom IR probe is used. See @probes section for description.
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -390,7 +390,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -404,10 +404,16 @@
 
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  //12v (120 watt?) MK2a PCB Heatbed into 3.3mm borosilicate (Geeetech Prusa i3 Pro, Pro/B/C/X)
-  #define  DEFAULT_bedKp 234.88
-  #define  DEFAULT_bedKi 42.79
-  #define  DEFAULT_bedKd 322.28
+  // 12v (120 watt theoretically) MK2a PCB Heatbed into 3.3mm borosilicate (Geeetech Prusa i3 Pro, Pro/B/C/X)
+ /* In real, voltage from Geeetech's Power Supply is about 10.87 Volt maximum, and total resistance of MK3a PCB
+  * Heatbed, including wires and connector to GT2560 is 1.45 Ohm minimum. Therefore, maximum power of this heatbed
+  * is 81.45 Watt. So, bedKp and bedKi must to set to more agressive values.
+  * Setting below are set according to M303 Autotune command results for MK3a insulated underneath with 1 mm cork mat 
+  * and food aluminium foil.
+  */
+  #define  DEFAULT_bedKp 464.05  // Value according to autotune
+  #define  DEFAULT_bedKi 91.37  // Value according to autotune
+  #define  DEFAULT_bedKd 589.22  // Value according to autotune
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
@@ -540,7 +546,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.74, 78.74, 2560, 105 } // liutas4x4: Extruder feedrate must to checked.
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.74, 78.74, 2560, 97 } // Some Geeetech extruders are not 100% the same as original MK8.
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -704,7 +710,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER -38  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -10  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.15  // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.265  // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1013,7 +1019,7 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing when homing all axes (G28).
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-#define Z_SAFE_HOMING // liutas4x4: check for correct XY positioning if G28 Z0 issued alone @ G28 section in Marlin_main.cpp
+#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // X point for Z homing when homing all axis (G28).
@@ -1300,7 +1306,7 @@
 //
 //  Set this option if CLOCKWISE causes values to DECREASE
 //
-#define REVERSE_ENCODER_DIRECTION
+//#define REVERSE_ENCODER_DIRECTION
 
 //
 // This option reverses the encoder direction for navigating LCD menus.
