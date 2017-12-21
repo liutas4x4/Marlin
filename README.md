@@ -1,4 +1,4 @@
-# Marlin 3D Printer Firmware
+# Fork of Marlin 3D Printer Firmware, version mainly 1.1.6, adopted for Geeetech I3 Pro X with IR differential Z probe, by DC42.
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
 ## Marlin 1.1
