@@ -5,12 +5,18 @@
 
 For [Acrilyc Geeetech I3 Pro X](http://www.geeetech.com/wiki/index.php/Prusa_I3_X) with IR differential Z probe.
 
+## Z probe
+
 Idea and schematics of the probe by David Crocker (a.k.a. DC42) 
  - [Mini height sensor board](https://miscsolutions.wordpress.com/mini-height-sensor-board/). Complete description of the board, it's setup and tuning.
  - [Firmware and schematics](https://github.com/dc42/OrmerodSensorBoard). Version V1.0_1.1 is used in this project.
  
 PCB is mine: 
- - []()
+ - [Eagle files](https://github.com/liutas4x4/IR-probe_byDC42/tree/master/Eagle_files). Slightly different from DC42, mirrored design.
+ - [Gerber files](https://github.com/liutas4x4/IR-probe_byDC42/tree/master/Gerber_files). Based on Spurkfun cam profile for Seeedstudio.
+ 
+Also, holder for this probe is mounted on changed left Geeetech's bracket - part #I3B1-31:
+ - [FreeCAD and STLs](https://github.com/liutas4x4/IR-probe_byDC42/tree/master/I3B1-31-Bracket_modified). All files are in open format.
 
 ## Current Status of Fork: In Development
 
