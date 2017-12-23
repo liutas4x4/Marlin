@@ -5,6 +5,10 @@
 
 For [Acrilyc Geeetech I3 Pro X](http://www.geeetech.com/wiki/index.php/Prusa_I3_X) with IR differential Z probe.
 
+## Clone of GT2560 board
+
+Board looks the same as GT2560, but there are not any printed "GT2560" silkscreen mark. Also, all endstops are 2-pin Molex connectors and for Z steppers there are only one connector, splitter cable is needed. As tested, it is exactly GT2560 rev. A from the side of Marlin.
+
 ## Z probe
 
 Idea and schematics of the probe by David Crocker (a.k.a. DC42) 
@@ -35,7 +39,7 @@ To current day, Bilinear autoleveling is not working correctly, so
 
 ## ToDo
 
-- apply bugfix 1.1.X
+- Beta 1.1.7 under test.
 
 ## Marlin Resources and Credits
 
