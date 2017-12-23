@@ -14,15 +14,12 @@ PCB is mine:
 
 ## Current Status of Fork: In Development
 
-Marlin development has reached an important milestone with its first stable release in over 2 years. During this period we focused on cleaning up the code and making it more modern, consistent, readable, and sensible.
+Marlin 1.1.6 is used in this fork.
+To current day, Bilinear autoleveling is not working correctly.
 
-## Marlin Resources
+## Marlin Resources and Credits
 
-See main Marlin GitHub directory.
-
-## Credits
-
-See main Marlin GitHub directory.
+See main [Marlin](https://github.com/MarlinFirmware/Marlin) GitHub directory.
 
 ## License, the same as Marlin itself
 
@@ -30,4 +27,4 @@ Marlin is published under the [GPL license](https://github.com/COPYING.md) becau
 
 While we can't prevent the use of this code in products (3D printers, CNC, etc.) that are closed source or crippled by a patent, we would prefer that you choose another firmware or, better yet, make your own.
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=ErikZalm&url=https://github.com/MarlinFirmware/Marlin&title=Marlin&language=&tags=github&category=software)
+
