@@ -405,7 +405,7 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // 12v (120 watt theoretically) MK2a PCB Heatbed into 3.3mm borosilicate (Geeetech Prusa i3 Pro, Pro/B/C/X)
- /* In real, voltage from Geeetech's Power Supply is about 10.87 Volt maximum, and total resistance of MK3a PCB
+ /* In real, voltage from Geeetech's Power Supply is about 10.87 Volt maximum, and total resistance of MK2a PCB
   * Heatbed, including wires and connector to GT2560 is 1.45 Ohm minimum. Therefore, maximum power of this heatbed
   * is 81.45 Watt. So, bedKp and bedKi must to set to more agressive values.
   * Setting below are set according to M303 Autotune command results for MK3a insulated underneath with 1 mm cork mat 
