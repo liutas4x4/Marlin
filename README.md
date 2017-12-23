@@ -1,5 +1,5 @@
 ﻿# Fork of Marlin 3D Printer Firmware
-<img align="right" src="../../raw/1.1.x/project_specific_files/images/400px-IMG_3896副本.jpg"/>
+<img align="right" src="../../raw/1.1.x/project_specific_files/images/400px-IMG_3896.jpg"/>
 
 ## Fork target
 
