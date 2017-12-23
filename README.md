@@ -7,7 +7,7 @@ For [Acrilyc Geeetech I3 Pro X](http://www.geeetech.com/wiki/index.php/Prusa_I3_
 
 ## Clone of GT2560 board
 
-Board looks the same as GT2560, but there are not any printed "GT2560" silkscreen mark. Also, all endstops are 2-pin Molex connectors and for Z steppers there are only one connector, splitter cable is needed. As tested, it is exactly GT2560 rev. A from the side of Marlin.
+Board looks the same as GT2560, but there are not any printed "GT2560" silkscreen mark. Also, all endstops are 2-pin Molex connectors and for Z steppers there are only one connector, splitted cable is needed. As tested, it is exactly GT2560 rev. A from the side of Marlin.
 
 ## Z probe
 
