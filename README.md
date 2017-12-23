@@ -18,6 +18,16 @@ PCB is mine:
 Also, holder for this probe is mounted on changed left Geeetech's bracket - part #I3B1-31:
  - [FreeCAD and STLs](https://github.com/liutas4x4/IR-probe_byDC42/tree/master/I3B1-31-Bracket_modified). All files are in open format.
 
+## MK2a Heatbed
+
+Voltage from Geeetech's Power Supply is about 10.9 Volt maximum, and total resistance of MK2a PCB Heatbed, including wires and connector to GT2560 is 1.45 Ohm minimum. Therefore, maximum power of this heatbed is 81.45 Watt. 
+
+So, bedKp and bedKi must to be set to more agressive values.
+
+80 Watt power is not enough to achieve 115-120°C if MK2a is used "as is", especially in cold room or/and with borosilicate glass placed on it. So, in the particular project MK2a is insulated underneath with 1mm cork mat and commecial ("food") aluminium foil.
+
+Please note, that thikness of borosilicate glass, supplied by Geeetech is 3.3mm, not 4.
+
 ## Current Status of Fork: In Development
 
 Marlin 1.1.6 is used in this fork.
