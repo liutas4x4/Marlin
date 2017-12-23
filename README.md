@@ -31,7 +31,11 @@ Please note, that thikness of borosilicate glass, supplied by Geeetech is 3.3mm,
 ## Current Status of Fork: In Development
 
 Marlin 1.1.6 is used in this fork.
-To current day, Bilinear autoleveling is not working correctly.
+To current day, Bilinear autoleveling is not working correctly, so
+
+## ToDo
+
+- apply bugfix 1.1.X
 
 ## Marlin Resources and Credits
 
