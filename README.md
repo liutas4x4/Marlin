@@ -3,9 +3,14 @@
 
 ## Fork target
 
-For Geeetech I3 Pro X with IR differential Z probe. 
+For [Acrilyc Geeetech I3 Pro X](http://www.geeetech.com/wiki/index.php/Prusa_I3_X) with IR differential Z probe.
+
 Idea and schematics of the probe by David Crocker (a.k.a. DC42) 
- - (https://miscsolutions.wordpress.com/mini-height-sensor-board/).
+ - [Mini height sensor board](https://miscsolutions.wordpress.com/mini-height-sensor-board/). Complete description of the board, it's setup and tuning.
+ - [Firmware and schematics](https://github.com/dc42/OrmerodSensorBoard). Version V1.0_1.1 is used in this project.
+ 
+PCB is mine: 
+ - []()
 
 ## Current Status of Fork: In Development
 
