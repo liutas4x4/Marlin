@@ -1,10 +1,11 @@
-# Fork of Marlin 3D Printer Firmware
+﻿# Fork of Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/project_specific_files/images/400px-IMG_3896副本.jpg" />
 
 ## Fork target
 
-For Geeetech I3 Pro X with IR differential Z probe. Schematics of the probe by DC42 
- - (link there).
+For Geeetech I3 Pro X with IR differential Z probe. 
+Idea and schematics of the probe by David Crocker (a.k.a. DC42) 
+ - (https://miscsolutions.wordpress.com/mini-height-sensor-board/).
 
 ## Current Status of Fork: In Development
 
