@@ -34,12 +34,13 @@ Please note, that thikness of borosilicate glass, supplied by Geeetech is 3.3mm,
 
 ## Current Status of Fork: In Development
 
+Set of the fork under test is at "GeeetechI3X" branch.
 Marlin 1.1.7 is used in this fork.
 To current day, Bilinear autoleveling is not working correctly, so
 
 ## ToDo
 
-- Beta 1.1.7 under test.
+- Working to find mistical crosses of Fade Heght and M851.
 
 ## Marlin Resources and Credits
 
