@@ -17,7 +17,7 @@ Idea and schematics of the probe by David Crocker (a.k.a. DC42)
  
 PCB is mine: 
  - [Eagle files](https://github.com/liutas4x4/IR-probe_byDC42/tree/master/Eagle_files). Slightly different from DC42, mirrored design.
- - [Gerber files](https://github.com/liutas4x4/IR-probe_byDC42/tree/master/Gerber_files). Based on Spurkfun cam profile for Seeedstudio.
+ - [Gerber files](https://github.com/liutas4x4/IR-probe_byDC42/tree/master/Gerber_files). Based on Sparkfun cam profile for Seeedstudio.
  
 Also, holder for this probe is mounted on changed left Geeetech's bracket - part #I3B1-31:
  - [FreeCAD and STLs](https://github.com/liutas4x4/IR-probe_byDC42/tree/master/I3B1-31-Bracket_modified). All files are in open format.
